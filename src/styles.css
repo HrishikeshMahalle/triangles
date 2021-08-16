@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://wallpapercave.com/wp/wp3445611.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Source Code Pro", monospace;
+}
+
+nav {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  color: #fff;
+  padding: 1.25em 0 1.25em 1.25em;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  gap: 1em;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.25em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.make,
+.areas,
+.hypotenuse,
+.quiz {
+  position: relative;
+  height: 100vh;
+  padding: 3.125em 0;
+}
+
+.quiz {
+  height: 250vh;
+}
+
+.areas,
+.quiz {
+  background-color: #000;
+}
+
+.make .container,
+.areas .container,
+.hypotenuse .container,
+.quiz .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1200px;
+  background: inherit;
+  color: #fff;
+  text-align: center;
+}
+
+.make h1,
+.areas h1,
+.hypotenuse h1,
+.quiz h1 {
+  font-size: 2em;
+  margin: 1.25em 0;
+}
+
+.make p,
+.areas p,
+.hypotenuse p,
+.quiz p {
+  font-size: 1.25em;
+  font-weight: 500;
+  margin: 1.25em 0;
+}
+
+.inputs,
+form {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  flex-direction: column;
+}
+
+.inputs input {
+  width: 5em;
+  height: 4em;
+  font-size: 1em;
+  padding: 0.625em;
+  outline: none;
+  text-align: center;
+}
+
+.make button,
+.areas button,
+.hypotenuse button,
+.quiz button {
+  width: 6em;
+  height: 3em;
+  margin: 1em 0;
+  font-size: 1em;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #fff;
+}
+
+.make button:hover,
+.areas button:hover,
+.hypotenuse button:hover,
+.quiz button:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.questions {
+  padding: 1em;
+}
+
+select {
+  display: block;
+  width: 50%;
+  margin: 1.625em auto;
+  outline: none;
+  height: 2em;
+}
+
+.incorrect {
+  background: #da0037;
+  color: #fff;
+}
+
+.correct {
+  background: #66de93;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
